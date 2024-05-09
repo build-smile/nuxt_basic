@@ -1,12 +1,12 @@
 <template>
     <div>
-        <p>produvt detail for {{ id }}</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus cumque amet labore cupiditate, voluptas
-            ullam enim velit. Voluptatibus debitis minus quaerat beatae, cupiditate eveniet commodi. Eos eligendi
-            dignissimos totam harum!</p>
+        <Head>
+            <Title>Nuxt Dojo | {{ product.title }}</title>
+        </Head>
+        <ProductDetails :product="product" />
     </div>
 </template>
-
+ุ
 <script setup>
 import { useRoute } from 'vue-router';
 
@@ -14,6 +14,12 @@ const { id } = useRoute().params
 definePageMeta({
     layout: "products"
 })
+const url = `https://fakestoreapi.com/products/${id}`
+const { data: product } = await useFetch(url, { key: 'id' })
+if (!product.value) {
+    throw createError({ statusCode: 404, statusMessage: 'Product not found',fatal:true })
+}
+
 </script>
 
 <style scoped></style>
