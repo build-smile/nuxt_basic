@@ -1,23 +1,32 @@
 <template>
     <div>
-        <div class="p-4">
+        <div class="grid grid-cols-2 gap-4 mt-3">
 
-                <h2 class="font-bold">Build your App</h2>
-
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Natus excepturi obcaecati recusandae unde
-                    consectetur fuga quis eius quo, corrupti dolorum sed perferendis in inventore. Maiores consequatur voluptates
-                    illum aspernatur Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi blanditiis excepturi perferendis
-                    quia nobis quidem libero fugit rerum nisi. Eveniet illum sint vero, explicabo dolorum cumque soluta
-                    aperiam repudiandae pariatur?
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates optio blanditiis aut nisi quos
-                    possimus porro quis dolor, fugit est expedita doloremque, dolore placeat, eos voluptatum repudiandae
-                    molestias rem aliquid!
-                    id? Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem ea dignissimos iure voluptas
-                    fugiat nihil sed nulla quaerat. Ipsum repellat fugit saepe eius, tempore earum nostrum laudantium
-                    impedit labore quisquam!Lorem
+            <div class="flex  justify-between flex-col">
+                <p class="font-bold text-teal-500 tracking-normal text-2xl leading-10">
+                    BY Academy</p>
+                
+                <p class="font-bold text-4xl leading-10 text-gray-500">
+                    Tailored solutions for your business needs. Start high-quality software development today!
                 </p>
-           
+                <button class="btn mt-3">Join Us</button>
+
+
+               
+            </div>
+
+            <div class="grid justify-items-center">
+                <img class="" src="../assets/image/coding.png" alt="">
+            </div>
+
+
+
         </div>
+
+
+
+
+
 
 
 
